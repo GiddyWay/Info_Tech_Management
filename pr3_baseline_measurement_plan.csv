@@ -1,0 +1,10 @@
+﻿metric,source_system,period,data_owner,formula,baseline_status
+migration_related_churn,billing + migration cohort,90d pre / 60d post previous wave,Billing/Product Analytics,lost_paid_revenue / pre_migration_paid_revenue,to_measure
+defective_profile_rate,source/target snapshots + support,previous migration wave,Data Engineering,confirmed_mismatch_profiles / migrated_profiles,to_measure
+time_to_detect,migration logs + support tracker,previous migration wave,Support Analytics,first_ticket_ts - migration_complete_ts,to_measure
+time_to_recover,support/incident tracker,30d after wave,Support/Incident Lead,resolved_ts - first_ticket_ts,to_measure
+migration_rework_hours,engineering/problem tracker,60d,Integration PMO,sum(hours tagged migration-rework),to_measure
+bus_factor_1_count,knowledge map,snapshot before pilot,Domain Leads,count(critical areas with one qualified expert),to_measure
+expert_wait_time,issue tracker,60d,Integration PMO,expert_first_response - task_created,to_measure
+external_support_rework_cost,finance + vendor invoices,6 months,Finance,sum(selected cost pool),to_measure
+parallel_run_cost,finance + application portfolio,1 month,Finance/IT asset owner,monthly legacy+target overlap run-cost,to_measure
